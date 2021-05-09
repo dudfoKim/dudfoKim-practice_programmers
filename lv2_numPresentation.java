@@ -17,8 +17,8 @@ public class lv2_numPresentation
                 
                 if(sum==n)
                 {
+		    answer++;
                     sum = 0;
-                    answer++;
                     break;
                 }
                 if(sum>n)
