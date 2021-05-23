@@ -61,7 +61,7 @@ public class lv2_wordChain
         
         return answer;
     }
-	
+
 	public static void main(String[] args) 
 	{
 		String[] n = {"hello", "observe", "effect", "take", "either", "recognize", "encourage", "ensure", "establish", "hang", "gather", "refer", "reference", "estimate", "executive"};
