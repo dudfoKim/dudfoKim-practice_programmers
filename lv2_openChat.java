@@ -57,15 +57,14 @@ public class lv2_openChat
     		
         	if(printAnswer[0].equals("Enter"))
         	{
-        		answer[i] = name + "´ÔÀÌ µé¾î¿Ô½À´Ï´Ù.";
+        		answer[i] = name + "ë‹˜ì´ ë“¤ì–´ì™”ìŠµë‹ˆë‹¤.";
         	}
         	else if(printAnswer[0].equals("Leave"))
         	{
-        		answer[i] = name + "´ÔÀÌ ³ª°¬½À´Ï´Ù.";
+        		answer[i] = name + "ë‹˜ì´ ë‚˜ê°”ìŠµë‹ˆë‹¤.";
         	}
         }
-        
-        
+      
         return answer;
     }
 	
