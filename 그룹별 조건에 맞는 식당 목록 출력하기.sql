@@ -1,0 +1,19 @@
+https://yoloaeee.tistory.com/281
+
+============================================
+
+WITH CNT AS
+(SELECT A.MEMBER_ID AS ID, COUNT(*) AS CT
+ FROM REST_REVIEW A
+ WHERE 1=1
+ GROUP BY A.MEMBER_ID
+ )
+SELECT C.MEMBER_NAME, B.REVIEW_TEXT, TO_CHAR(B.REVIEW_DATE, 'YYYY-MM-DD')
+FROM CNT A, REST_REVIEW B, MEMBER_PROFILE C
+WHERE A.CT IN (SELECT MAX(CNT.CT)
+                            FROM CNT
+                            )
+AND A.ID = B.MEMBER_ID
+AND A.ID = C.MEMBER_ID
+ORDER BY REVIEW_DATE, REVIEW_TEXT
+;
