@@ -1,7 +1,6 @@
 https://yoloaeee.tistory.com/304
 
 ====================================
-  
 import java.util.Arrays;
 
 class Solution
@@ -13,9 +12,9 @@ class Solution
         
         for(int i=1; i<=number; i++)
         {
-            arr[i]++;
+            arr[i]++; // => 새로 추가
             
-            for(int j=1; j<=i/2; j++)
+            for(int j=1; j<=i/2; j++) // for(int j=1; j<=i; j++) => 시간초과 발생
             {
                 if(i%j==0)
                 {
